@@ -195,11 +195,7 @@ const ContactPage: React.FC = () => {
                     <button
                       type="submit"
                       disabled={isSending || isSuccess}
-                      className={`btn px-8 py-3 ${
-                        isSuccess
-                          ? 'bg-green-500 text-white'
-                          : 'bg-primary-500 text-white hover:bg-primary-600'
-                      } inline-flex items-center transition-colors`}
+                      className={`px-8 py-3 bg-black text-white border-2 border-black rounded-full inline-flex items-center transition-none ${isSuccess ? 'opacity-70' : ''}`}
                     >
                       {isSending ? (
                         <span className="inline-flex items-center">

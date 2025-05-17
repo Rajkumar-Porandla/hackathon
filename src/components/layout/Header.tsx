@@ -44,23 +44,41 @@ const Header: React.FC = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/" className={isActive('/') ? 'nav-link-active' : 'nav-link'} onClick={handleNavClick}>
-            Home
+          <Link to="/" className="relative group" onClick={handleNavClick}>
+            <span className={isActive('/') ? 'nav-link-active' : 'nav-link'}>Home</span>
+            {isActive('/') && (
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black origin-left scale-x-0 group-[.nav-link-active]:scale-x-100 transition-transform duration-500" style={{transform: 'scaleX(1)'}}></span>
+            )}
           </Link>
-          <Link to="/features" className={isActive('/features') ? 'nav-link-active' : 'nav-link'} onClick={handleNavClick}>
-            Features
+          <Link to="/features" className="relative group" onClick={handleNavClick}>
+            <span className={isActive('/features') ? 'nav-link-active' : 'nav-link'}>Features</span>
+            {isActive('/features') && (
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black origin-left scale-x-0 group-[.nav-link-active]:scale-x-100 transition-transform duration-500" style={{transform: 'scaleX(1)'}}></span>
+            )}
           </Link>
-          <Link to="/flashcards" className={isActive('/flashcards') ? 'nav-link-active' : 'nav-link'} onClick={handleNavClick}>
-            Flashcards
+          <Link to="/flashcards" className="relative group" onClick={handleNavClick}>
+            <span className={isActive('/flashcards') ? 'nav-link-active' : 'nav-link'}>Flashcards</span>
+            {isActive('/flashcards') && (
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black origin-left scale-x-0 group-[.nav-link-active]:scale-x-100 transition-transform duration-500" style={{transform: 'scaleX(1)'}}></span>
+            )}
           </Link>
-          <Link to="/stats" className={isActive('/stats') ? 'nav-link-active' : 'nav-link'} onClick={handleNavClick}>
-            Stats
+          <Link to="/stats" className="relative group" onClick={handleNavClick}>
+            <span className={isActive('/stats') ? 'nav-link-active' : 'nav-link'}>Stats</span>
+            {isActive('/stats') && (
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black origin-left scale-x-0 group-[.nav-link-active]:scale-x-100 transition-transform duration-500" style={{transform: 'scaleX(1)'}}></span>
+            )}
           </Link>
-          <Link to="/about" className={isActive('/about') ? 'nav-link-active' : 'nav-link'} onClick={handleNavClick}>
-            About
+          <Link to="/about" className="relative group" onClick={handleNavClick}>
+            <span className={isActive('/about') ? 'nav-link-active' : 'nav-link'}>About</span>
+            {isActive('/about') && (
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black origin-left scale-x-0 group-[.nav-link-active]:scale-x-100 transition-transform duration-500" style={{transform: 'scaleX(1)'}}></span>
+            )}
           </Link>
-          <Link to="/contact" className={isActive('/contact') ? 'nav-link-active' : 'nav-link'} onClick={handleNavClick}>
-            Contact
+          <Link to="/contact" className="relative group" onClick={handleNavClick}>
+            <span className={isActive('/contact') ? 'nav-link-active' : 'nav-link'}>Contact</span>
+            {isActive('/contact') && (
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black origin-left scale-x-0 group-[.nav-link-active]:scale-x-100 transition-transform duration-500" style={{transform: 'scaleX(1)'}}></span>
+            )}
           </Link>
         </nav>
         

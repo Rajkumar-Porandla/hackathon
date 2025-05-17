@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import BackgroundIcons from './components/background/BackgroundIcons';
 import HomePage from './pages/HomePage';
 import FeaturesPage from './pages/FeaturesPage';
 import FlashcardPage from './pages/FlashcardPage';
@@ -24,6 +25,7 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <ScrollToTop />
+        <BackgroundIcons />
         <Header />
         <main className="flex-grow">
           <Routes>
