@@ -118,9 +118,12 @@ const AboutPage: React.FC = () => {
               We're always looking for passionate people to join our team. If you're excited about 
               transforming education and building innovative learning tools, we'd love to hear from you.
             </p>
-            <a href="/contact" className="btn-primary py-3 px-8 text-lg">
+{/*             <a href="/contact" className="btn-primary py-3 px-8 text-lg">
               View Open Positions
-            </a>
+            </a> */}
+            <Link to="/contact" className="btn-primary py-3 px-8 text-lg">
+            View Open Positions
+            </Link>
           </div>
         </div>
       </section>
