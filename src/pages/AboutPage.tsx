@@ -82,11 +82,11 @@ const AboutPage: React.FC = () => {
           <div className="flex justify-center items-center min-h-[400px]">
             {teamMembers.map((member, index) => (
               <div key={index} className="card overflow-hidden animate-slide-up max-w-xs w-full flex flex-col items-center p-0" style={{ animationDelay: `${index * 0.1}s` }}>
-                <img 
+{/*                 <img 
                   src={member.image} 
                   alt={member.name} 
                   className="w-full aspect-square object-cover"
-                />
+                /> */}
                 <div className="p-6 w-full text-center">
                   <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
                   <p className="text-primary-600 mb-3">{member.role}</p>
